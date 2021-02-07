@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:divider="@null"
+      android:dividerHeight="0dp" is used for HIDING THE DIVIDER LINES -->
+
+<!-- RelativeLayout used now instead of LinearLayout because we intend to overlap our Empty Textview over the Listview if there is No Data to fetch -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:divider="@color/white"
+        android:dividerHeight="0.1dp"/>
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <!-- This view would be controlled by the setEmptyView() method -->
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <!-- android:layout_centerInParent = "true" is the attribute we use to center the text vertically and horizontally within the parent with the attribute -->
+
+    <!-- Loading indicator is only shown before the first load -->
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">NewsHubble</string>
+
+    <!-- Text to display in the list when there are no news-items found [CHAR LIMIT=NONE] -->
+    <string name="no_news">No data found via the API.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No Internet connection.</string>
+
+</resources>
